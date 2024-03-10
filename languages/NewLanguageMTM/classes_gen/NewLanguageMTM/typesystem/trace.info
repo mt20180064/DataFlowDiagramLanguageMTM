@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="8,0,16,0" name="NewLanguageMTM.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:06138626-8f18-40f2-9813-a784ecc93b98(NewLanguageMTM.typesystem)/6367742724884844118">
+    <file name="TypesystemDescriptor.java">
+      <node id="6367742724884844118" at="10,5,11,87" concept="5" />
+      <node id="6367742724884844118" at="11,87,12,55" concept="2" />
+      <node id="6367742724884844118" at="9,33,13,5" concept="0" />
+      <scope id="6367742724884844118" at="10,5,12,55">
+        <var name="nonTypesystemRule" id="6367742724884844118" />
+      </scope>
+    </file>
+    <file name="check_Flow_NonTypesystemRule.java">
+      <node id="4390225084682858812" at="27,117,28,0" concept="7" />
+      <node id="4830846560551785205" at="28,0,29,0" concept="7" />
+      <node id="6367742724884929761" at="31,7,32,66" concept="5" />
+      <node id="6367742724884929761" at="32,66,33,258" concept="5" />
+      <node id="6367742724885034721" at="37,7,38,66" concept="5" />
+      <node id="6367742724885034721" at="38,66,39,251" concept="5" />
+      <node id="6367742724885053730" at="43,7,44,66" concept="5" />
+      <node id="6367742724885053730" at="44,66,45,263" concept="5" />
+      <node id="6367742724885080556" at="49,7,50,66" concept="5" />
+      <node id="6367742724885080556" at="50,66,51,262" concept="5" />
+      <node id="6367742724885140315" at="55,7,56,66" concept="5" />
+      <node id="6367742724885140315" at="56,66,57,336" concept="5" />
+      <node id="6367742724885289517" at="61,7,62,66" concept="5" />
+      <node id="6367742724885289517" at="62,66,63,336" concept="5" />
+      <node id="6367742724885297297" at="67,7,68,66" concept="5" />
+      <node id="6367742724885297297" at="68,66,69,286" concept="5" />
+      <node id="6367742724885258027" at="73,7,74,66" concept="5" />
+      <node id="6367742724885258027" at="74,66,75,225" concept="5" />
+      <node id="4390225084682808996" at="77,5,78,0" concept="7" />
+      <node id="6367742724884844118" at="80,50,81,28" concept="6" />
+      <node id="6367742724884844118" at="83,68,84,102" concept="6" />
+      <node id="6367742724884844118" at="86,30,87,17" concept="6" />
+      <node id="4390225084681817346" at="89,52,90,40" concept="6" />
+      <node id="6367742724884844118" at="94,0,95,0" concept="8" trace="outputFlow$lN96" />
+      <node id="6367742724884844118" at="95,0,96,0" concept="8" trace="elementRef$_vnB" />
+      <node id="6367742724884844118" at="96,0,97,0" concept="8" trace="type$NLpo" />
+      <node id="6367742724884844118" at="97,0,98,0" concept="8" trace="inputFlow$lMF4" />
+      <node id="6367742724884844118" at="98,0,99,0" concept="8" trace="dataFlow$lNQ9" />
+      <node id="6367742724884844118" at="102,0,103,0" concept="8" trace="ExternalEntity$hD" />
+      <node id="6367742724884844118" at="103,0,104,0" concept="8" trace="DataStore$iB" />
+      <node id="6367742724884844118" at="104,0,105,0" concept="8" trace="Flow$x9" />
+      <node id="6367742724884844118" at="108,0,109,0" concept="8" trace="name$MnvL" />
+      <node id="6367742724884844118" at="25,0,27,0" concept="1" trace="check_Flow_NonTypesystemRule#()V" />
+      <node id="6367742724884844118" at="80,0,83,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="6367742724884844118" at="83,0,86,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="6367742724884844118" at="86,0,89,0" concept="4" trace="overrides#()Z" />
+      <node id="4390225084681817346" at="89,0,92,0" concept="9" trace="isEmptyString#(Ljava/lang/String;)Z" />
+      <node id="6367742724884929761" at="30,548,34,7" concept="0" />
+      <node id="6367742724885034721" at="36,538,40,7" concept="0" />
+      <node id="6367742724885053730" at="42,543,46,7" concept="0" />
+      <node id="6367742724885080556" at="48,543,52,7" concept="0" />
+      <node id="6367742724885140315" at="54,177,58,7" concept="0" />
+      <node id="6367742724885289517" at="60,178,64,7" concept="0" />
+      <node id="6367742724885297297" at="66,126,70,7" concept="0" />
+      <node id="6367742724885258027" at="72,78,76,7" concept="0" />
+      <node id="6367742724884844126" at="29,0,35,5" concept="3" />
+      <node id="6367742724885005206" at="35,5,41,5" concept="3" />
+      <node id="6367742724885034850" at="41,5,47,5" concept="3" />
+      <node id="6367742724885053896" at="47,5,53,5" concept="3" />
+      <node id="6367742724885120474" at="53,5,59,5" concept="3" />
+      <node id="6367742724885273037" at="59,5,65,5" concept="3" />
+      <node id="6367742724885290702" at="65,5,71,5" concept="3" />
+      <node id="6367742724885243773" at="71,5,77,5" concept="3" />
+      <node id="6367742724884844118" at="27,0,80,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="6367742724884844118" at="25,41,25,41" />
+      <scope id="6367742724884844118" at="80,50,81,28" />
+      <scope id="6367742724884844118" at="83,68,84,102" />
+      <scope id="6367742724884844118" at="86,30,87,17" />
+      <scope id="4390225084681817346" at="89,52,90,40" />
+      <scope id="6367742724884844118" at="25,0,27,0" />
+      <scope id="6367742724884929761" at="31,7,33,258">
+        <var name="_reporter_2309309498" id="6367742724884929761" />
+        <var name="errorTarget" id="6367742724884929761" />
+      </scope>
+      <scope id="6367742724885034721" at="37,7,39,251">
+        <var name="_reporter_2309309498" id="6367742724885034721" />
+        <var name="errorTarget" id="6367742724885034721" />
+      </scope>
+      <scope id="6367742724885053730" at="43,7,45,263">
+        <var name="_reporter_2309309498" id="6367742724885053730" />
+        <var name="errorTarget" id="6367742724885053730" />
+      </scope>
+      <scope id="6367742724885080556" at="49,7,51,262">
+        <var name="_reporter_2309309498" id="6367742724885080556" />
+        <var name="errorTarget" id="6367742724885080556" />
+      </scope>
+      <scope id="6367742724885140315" at="55,7,57,336">
+        <var name="_reporter_2309309498" id="6367742724885140315" />
+        <var name="errorTarget" id="6367742724885140315" />
+      </scope>
+      <scope id="6367742724885289517" at="61,7,63,336">
+        <var name="_reporter_2309309498" id="6367742724885289517" />
+        <var name="errorTarget" id="6367742724885289517" />
+      </scope>
+      <scope id="6367742724885297297" at="67,7,69,286">
+        <var name="_reporter_2309309498" id="6367742724885297297" />
+        <var name="errorTarget" id="6367742724885297297" />
+      </scope>
+      <scope id="6367742724885258027" at="73,7,75,225">
+        <var name="_reporter_2309309498" id="6367742724885258027" />
+        <var name="errorTarget" id="6367742724885258027" />
+      </scope>
+      <scope id="6367742724884844118" at="80,0,83,0" />
+      <scope id="6367742724884844118" at="83,0,86,0">
+        <var name="argument" id="6367742724884844118" />
+      </scope>
+      <scope id="6367742724884844118" at="86,0,89,0" />
+      <scope id="4390225084681817346" at="89,0,92,0">
+        <var name="str" id="4390225084681817346" />
+      </scope>
+      <scope id="6367742724884844128" at="30,548,34,7" />
+      <scope id="6367742724885005208" at="36,538,40,7" />
+      <scope id="6367742724885034852" at="42,543,46,7" />
+      <scope id="6367742724885053898" at="48,543,52,7" />
+      <scope id="6367742724885120476" at="54,177,58,7" />
+      <scope id="6367742724885273039" at="60,178,64,7" />
+      <scope id="6367742724885290704" at="66,126,70,7" />
+      <scope id="6367742724885243775" at="72,78,76,7" />
+      <scope id="6367742724884844119" at="27,117,78,0" />
+      <scope id="6367742724884844118" at="27,0,80,0">
+        <var name="flow" id="6367742724884844118" />
+        <var name="status" id="6367742724884844118" />
+        <var name="typeCheckingContext" id="6367742724884844118" />
+      </scope>
+      <unit id="6367742724884844118" at="107,0,110,0" name="NewLanguageMTM.typesystem.check_Flow_NonTypesystemRule$PROPS" />
+      <unit id="6367742724884844118" at="101,0,106,0" name="NewLanguageMTM.typesystem.check_Flow_NonTypesystemRule$CONCEPTS" />
+      <unit id="6367742724884844118" at="93,0,100,0" name="NewLanguageMTM.typesystem.check_Flow_NonTypesystemRule$LINKS" />
+      <unit id="6367742724884844118" at="24,0,111,0" name="NewLanguageMTM.typesystem.check_Flow_NonTypesystemRule" />
+    </file>
+  </root>
+</debug-info>
+
