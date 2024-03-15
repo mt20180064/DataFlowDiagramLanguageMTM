@@ -158,7 +158,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:6c0627d3-4986-4ace-b681-5e8c12584872(NewLanguageMTM.structure)/6070516705893290479");
     b.version(3);
-    b.property("numeration", 0x543ecec7f1d811f1L).type(PrimitiveTypeId.INTEGER).origin("6070516705893290481").done();
+    b.property("numeration", 0x543ecec7f1d811f1L).type(PrimitiveTypeId.STRING).origin("6070516705893290481").done();
     b.aggregate("flows", 0x7b3cd253804ccdc1L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d811ffL).optional(true).ordered(true).multiple(true).origin("8880203821344411073").done();
     b.alias("process");
     return b.create();

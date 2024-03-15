@@ -70,7 +70,7 @@
     <node concept="1TJgyi" id="5gYNGvLQ17L" role="1TKVEl">
       <property role="IQ2nx" value="6070516705893290481" />
       <property role="TrG5h" value="numeration" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyj" id="7GWO_e0jcR1" role="1TKVEi">
       <property role="IQ2ns" value="8880203821344411073" />

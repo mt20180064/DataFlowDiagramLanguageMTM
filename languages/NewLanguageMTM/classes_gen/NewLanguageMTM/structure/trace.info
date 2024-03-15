@@ -151,8 +151,8 @@
       <node id="6070516705893290479" at="157,34,158,71" concept="0" />
       <node id="6070516705893290479" at="158,71,159,101" concept="0" />
       <node id="6070516705893290479" at="159,101,160,17" concept="0" />
-      <node id="6070516705893290481" at="160,17,161,117" concept="0" />
-      <node id="8880203821344411073" at="161,117,162,197" concept="0" />
+      <node id="6070516705893290481" at="160,17,161,116" concept="0" />
+      <node id="8880203821344411073" at="161,116,162,197" concept="0" />
       <node id="6070516705893290479" at="162,197,163,23" concept="0" />
       <node id="6070516705893290479" at="163,23,164,22" concept="4" />
       <node id="6070516705893290479" at="155,0,166,0" concept="7" trace="createDescriptorForProcess#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
