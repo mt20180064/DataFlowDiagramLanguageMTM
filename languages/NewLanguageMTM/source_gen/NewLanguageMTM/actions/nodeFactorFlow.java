@@ -16,7 +16,7 @@ public class nodeFactorFlow {
   public static class NodeFactory_6367742724885409776 implements NodeFactory {
     public void setup(SNode newNode, SNode sampleNode, SNode enclosingNode, int index, SModel model) {
       SNode parent = (SNode) enclosingNode;
-      SPropertyOperations.assign(newNode, PROPS.name$MnvL, "Tok  " + (ListSequence.fromList(SLinkOperations.getChildren(parent, LINKS.flows$2moG)).count() + 1));
+      SPropertyOperations.assign(newNode, PROPS.name$MnvL, "Tok  " + (ListSequence.fromList(SLinkOperations.getChildren(parent, LINKS.flows$jW4M)).count() + 1));
 
     }
   }
@@ -26,6 +26,6 @@ public class nodeFactorFlow {
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink flows$2moG = MetaAdapterFactory.getContainmentLink(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d81203L, 0x543ecec7f1d81204L, "flows");
+    /*package*/ static final SContainmentLink flows$jW4M = MetaAdapterFactory.getContainmentLink(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d811efL, 0x7b3cd253804ccdc1L, "flows");
   }
 }

@@ -8,25 +8,23 @@
   <registry>
     <language id="5dd044a5-1cd3-47bb-a3f5-d83db0ac7aeb" name="NewLanguageMTM">
       <concept id="6070516705893290499" name="NewLanguageMTM.structure.FlowsRepo" flags="ng" index="2_THN4">
-        <child id="6070516705893290500" name="flows" index="2_THN3" />
-        <child id="4390225084680237490" name="elements" index="1WGGv6" />
+        <child id="8880203821345371561" name="elements" index="3VpUvU" />
+        <child id="8880203821344199829" name="processes" index="3Vtkr6" />
       </concept>
-      <concept id="6070516705893290479" name="NewLanguageMTM.structure.Process" flags="ng" index="2_THWC" />
-      <concept id="6070516705893290486" name="NewLanguageMTM.structure.DataStore" flags="ng" index="2_THWL" />
-      <concept id="6070516705893290484" name="NewLanguageMTM.structure.ExternalEntity" flags="ng" index="2_THWN" />
+      <concept id="6070516705893290479" name="NewLanguageMTM.structure.Process" flags="ng" index="2_THWC">
+        <child id="8880203821344411073" name="flows" index="3Vs1Yi" />
+      </concept>
       <concept id="6070516705893290495" name="NewLanguageMTM.structure.Flow" flags="ng" index="2_THWS">
-        <child id="6070516705893338822" name="inputFlow" index="2_Tw01" />
-        <child id="6070516705893338827" name="dataFlow" index="2_Tw0c" />
-        <child id="6070516705893338824" name="outputFlow" index="2_Tw0f" />
+        <reference id="8880203821344411159" name="output" index="3Vs1L4" />
+        <reference id="8880203821344411157" name="input" index="3Vs1L6" />
+        <child id="2548972722952369534" name="inputFlow" index="2uSV1h" />
+        <child id="2548972722952369540" name="outputFlow" index="2uSV2F" />
       </concept>
       <concept id="6070516705893290488" name="NewLanguageMTM.structure.DataFlow" flags="ng" index="2_THWZ">
         <property id="6070516705893290492" name="description" index="2_THWV" />
       </concept>
-      <concept id="4390225084680106957" name="NewLanguageMTM.structure.ElementReference" flags="ng" index="1WGcmT">
-        <reference id="4390225084680237457" name="elementRef" index="1WGGv_" />
-      </concept>
+      <concept id="6070516705893268691" name="NewLanguageMTM.structure.Element" flags="ng" index="2_Un8k" />
       <concept id="4390225084680237454" name="NewLanguageMTM.structure.ElementInstance" flags="ng" index="1WGGvU">
-        <property id="3140145300644060594" name="numberOfElement" index="2J_5gL" />
         <child id="6679003046163943699" name="type" index="1CUwjL" />
       </concept>
     </language>
@@ -36,99 +34,72 @@
       </concept>
     </language>
   </registry>
-  <node concept="2_THN4" id="3NHdBh0zkPE">
-    <property role="TrG5h" value="Knjizara Vulkan" />
-    <node concept="1WGGvU" id="5MK_u8OmD5v" role="1WGGv6">
-      <property role="2J_5gL" value="Element1" />
-      <property role="TrG5h" value="Nabavka" />
-      <node concept="2_THWC" id="5MK_u8OnSNt" role="1CUwjL" />
-    </node>
-    <node concept="1WGGvU" id="5MK_u8OnSNv" role="1WGGv6">
-      <property role="2J_5gL" value="Element2" />
-      <property role="TrG5h" value="Pakovanje" />
-      <node concept="2_THWC" id="5MK_u8OnSN_" role="1CUwjL" />
-    </node>
-    <node concept="1WGGvU" id="5MK_u8OnSNC" role="1WGGv6">
-      <property role="2J_5gL" value="Element3" />
-      <property role="TrG5h" value="Magacin" />
-      <node concept="2_THWL" id="5MK_u8OnSNK" role="1CUwjL" />
-    </node>
-    <node concept="1WGGvU" id="5MK_u8OnSNN" role="1WGGv6">
-      <property role="2J_5gL" value="Element4" />
-      <property role="TrG5h" value="Kupci" />
-      <node concept="2_THWN" id="5MK_u8OnSNX" role="1CUwjL" />
-    </node>
-    <node concept="1WGGvU" id="5MK_u8OnSO0" role="1WGGv6">
-      <property role="2J_5gL" value="Element5" />
-      <property role="TrG5h" value="Finansije" />
-      <node concept="2_THWC" id="5MK_u8OnSOc" role="1CUwjL" />
-    </node>
-    <node concept="1WGGvU" id="4caBlCm67QX" role="1WGGv6">
-      <property role="2J_5gL" value="Element6" />
-      <property role="TrG5h" value="Unosenje u sistem" />
-      <node concept="2_THWC" id="4caBlCm67Rb" role="1CUwjL" />
-    </node>
-    <node concept="1WGGvU" id="4caBlCm67Re" role="1WGGv6">
-      <property role="2J_5gL" value="Element7" />
-      <property role="TrG5h" value="Katalog" />
-      <node concept="2_THWL" id="4caBlCm67RK" role="1CUwjL" />
-    </node>
-    <node concept="1WGGvU" id="4caBlCm67Ru" role="1WGGv6">
-      <property role="2J_5gL" value="Element8" />
-      <property role="TrG5h" value="Dobavljaci" />
-      <node concept="2_THWN" id="4caBlCm67RN" role="1CUwjL" />
-    </node>
-    <node concept="2_THWS" id="KGpwbg6Mgu" role="2_THN3">
-      <property role="TrG5h" value="Tok  1" />
-      <node concept="1WGcmT" id="KGpwbg6Mgv" role="2_Tw01">
-        <ref role="1WGGv_" node="5MK_u8OnSNv" resolve="Pakovanje" />
+  <node concept="2_THN4" id="2dvLiYXH_34">
+    <property role="TrG5h" value="IS studentska sluzba" />
+    <node concept="2_THWC" id="2dvLiYXI$i6" role="3Vtkr6">
+      <property role="TrG5h" value="Upis" />
+      <node concept="2_THWS" id="2dvLiYXI$i8" role="3Vs1Yi">
+        <property role="TrG5h" value="Tok  1" />
+        <ref role="3Vs1L6" node="2dvLiYXI$ia" resolve="Kadrovska evidencija" />
+        <ref role="3Vs1L4" node="2dvLiYXI$hO" resolve="Profesor" />
+        <node concept="2_THWZ" id="2dvLiYXJzpT" role="2uSV1h">
+          <property role="TrG5h" value="informacije o upisanima" />
+          <property role="2_THWV" value="dsds" />
+        </node>
+        <node concept="2_THWZ" id="2dvLiYXJzpV" role="2uSV2F">
+          <property role="TrG5h" value="nastavne grupe" />
+          <property role="2_THWV" value="dsds" />
+        </node>
       </node>
-      <node concept="1WGcmT" id="KGpwbg6Mgw" role="2_Tw0f">
-        <ref role="1WGGv_" node="5MK_u8OmD5v" resolve="Nabavka" />
+      <node concept="2_THWS" id="2dvLiYXJM1I" role="3Vs1Yi">
+        <property role="TrG5h" value="Tok  2" />
+        <ref role="3Vs1L6" node="2dvLiYXIl6S" resolve="Student" />
+        <ref role="3Vs1L4" node="2dvLiYXI$ii" resolve="Dosije studenta" />
+        <node concept="2_THWZ" id="2dvLiYXJM1J" role="2uSV1h">
+          <property role="TrG5h" value="dokumenta za upis" />
+        </node>
+        <node concept="2_THWZ" id="2dvLiYXJM1K" role="2uSV2F">
+          <property role="TrG5h" value="evidentirana dokumenta za upis" />
+        </node>
       </node>
-      <node concept="2_THWZ" id="KGpwbg6Mgx" role="2_Tw0c">
-        <property role="TrG5h" value="knjige za pakovanje" />
-        <property role="2_THWV" value="zaposleni u nabavci salju pridosle knjige na pakovanje" />
+      <node concept="2_THWS" id="2dvLiYXJM1R" role="3Vs1Yi">
+        <property role="TrG5h" value="Tok  3" />
+        <ref role="3Vs1L6" node="2dvLiYXI$hO" resolve="Profesor" />
+        <ref role="3Vs1L4" node="2dvLiYXI$hO" resolve="Profesor" />
+        <node concept="2_THWZ" id="2dvLiYXJM1S" role="2uSV1h">
+          <property role="TrG5h" value="dokumenta za prijemni ispit" />
+        </node>
+        <node concept="2_THWZ" id="2dvLiYXJM1T" role="2uSV2F">
+          <property role="TrG5h" value="spisak za prijemni ispit" />
+        </node>
+      </node>
+      <node concept="2_THWS" id="2dvLiYXJM23" role="3Vs1Yi">
+        <property role="TrG5h" value="Tok  4" />
+        <ref role="3Vs1L6" node="2dvLiYXI$hO" resolve="Profesor" />
+        <ref role="3Vs1L4" node="2dvLiYXIl6S" resolve="Student" />
+        <node concept="2_THWZ" id="2dvLiYXJM24" role="2uSV1h">
+          <property role="TrG5h" value="rezultati prijemnog ispita" />
+        </node>
+        <node concept="2_THWZ" id="2dvLiYXJM25" role="2uSV2F">
+          <property role="TrG5h" value="izvestaj o prijemnom ispitu" />
+        </node>
       </node>
     </node>
-    <node concept="2_THWS" id="KGpwbg6MjK" role="2_THN3">
-      <property role="TrG5h" value="Tok  2" />
-      <node concept="1WGcmT" id="KGpwbg6MjL" role="2_Tw01">
-        <ref role="1WGGv_" node="5MK_u8OnSNN" resolve="Kupci" />
-      </node>
-      <node concept="1WGcmT" id="KGpwbg6MjM" role="2_Tw0f">
-        <ref role="1WGGv_" node="5MK_u8OnSO0" resolve="Finansije" />
-      </node>
-      <node concept="2_THWZ" id="KGpwbg6MjN" role="2_Tw0c">
-        <property role="TrG5h" value="profaktura" />
-        <property role="2_THWV" value="zaposleni na finansijama salju profakturu kupcima" />
-      </node>
+    <node concept="1WGGvU" id="2dvLiYXIl6S" role="3VpUvU">
+      <property role="TrG5h" value="Student" />
+      <node concept="2_Un8k" id="2dvLiYXIl6T" role="1CUwjL" />
     </node>
-    <node concept="2_THWS" id="KGpwbg6MjW" role="2_THN3">
-      <property role="TrG5h" value="Tok  3" />
-      <node concept="1WGcmT" id="KGpwbg6MjX" role="2_Tw01">
-        <ref role="1WGGv_" node="5MK_u8OnSNC" resolve="Magacin" />
-      </node>
-      <node concept="1WGcmT" id="KGpwbg6MjY" role="2_Tw0f">
-        <ref role="1WGGv_" node="5MK_u8OnSNv" resolve="Pakovanje" />
-      </node>
-      <node concept="2_THWZ" id="KGpwbg6MjZ" role="2_Tw0c">
-        <property role="TrG5h" value="roba za pakovanje" />
-        <property role="2_THWV" value="zaposleni na pakovanju donose robu u magacin i odlazu na odgovarajuca mesta" />
-      </node>
+    <node concept="1WGGvU" id="2dvLiYXI$hO" role="3VpUvU">
+      <property role="TrG5h" value="Profesor" />
+      <node concept="2_Un8k" id="2dvLiYXI$hP" role="1CUwjL" />
     </node>
-    <node concept="2_THWS" id="4caBlCm67TI" role="2_THN3">
-      <property role="TrG5h" value="Tok  4" />
-      <node concept="1WGcmT" id="4caBlCm67TJ" role="2_Tw01">
-        <ref role="1WGGv_" node="4caBlCm67QX" resolve="Unosenje u sistem" />
-      </node>
-      <node concept="1WGcmT" id="4caBlCm67TK" role="2_Tw0f">
-        <ref role="1WGGv_" node="5MK_u8OnSO0" resolve="Finansije" />
-      </node>
-      <node concept="2_THWZ" id="4caBlCm67TL" role="2_Tw0c">
-        <property role="TrG5h" value="cene artikala" />
-        <property role="2_THWV" value="iznos, barkod i ostale informacije potrebne za kupovinu zaposleni unose u sistem" />
-      </node>
+    <node concept="1WGGvU" id="2dvLiYXI$ia" role="3VpUvU">
+      <property role="TrG5h" value="Kadrovska evidencija" />
+      <node concept="2_Un8k" id="2dvLiYXI$ib" role="1CUwjL" />
+    </node>
+    <node concept="1WGGvU" id="2dvLiYXI$ii" role="3VpUvU">
+      <property role="TrG5h" value="Dosije studenta" />
+      <node concept="2_Un8k" id="2dvLiYXI$ij" role="1CUwjL" />
     </node>
   </node>
 </model>

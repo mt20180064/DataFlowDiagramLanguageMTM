@@ -135,9 +135,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:6c0627d3-4986-4ace-b681-5e8c12584872(NewLanguageMTM.structure)/6070516705893290495");
     b.version(3);
-    b.aggregate("inputFlow", 0x543ecec7f1d8cec6L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x3ced3674405df3cdL).optional(false).ordered(true).multiple(false).origin("6070516705893338822").done();
-    b.aggregate("outputFlow", 0x543ecec7f1d8cec8L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x3ced3674405df3cdL).optional(false).ordered(true).multiple(false).origin("6070516705893338824").done();
-    b.aggregate("dataFlow", 0x543ecec7f1d8cecbL).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d811f8L).optional(false).ordered(true).multiple(false).origin("6070516705893338827").done();
+    b.associate("input", 0x7b3cd253804cce15L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x3ced3674405ff18eL).optional(false).origin("8880203821344411157").done();
+    b.associate("output", 0x7b3cd253804cce17L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x3ced3674405ff18eL).optional(false).origin("8880203821344411159").done();
+    b.aggregate("inputFlow", 0x235fc52fbdbc757eL).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d811f8L).optional(false).ordered(true).multiple(false).origin("2548972722952369534").done();
+    b.aggregate("outputFlow", 0x235fc52fbdbc7584L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d811f8L).optional(false).ordered(true).multiple(false).origin("2548972722952369540").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForFlowsRepo() {
@@ -147,17 +148,18 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:6c0627d3-4986-4ace-b681-5e8c12584872(NewLanguageMTM.structure)/6070516705893290499");
     b.version(3);
     b.aggregate("flows", 0x543ecec7f1d81204L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d811ffL).optional(true).ordered(true).multiple(true).origin("6070516705893290500").done();
-    b.aggregate("elements", 0x3ced3674405ff1b2L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x3ced3674405ff18eL).optional(true).ordered(true).multiple(true).origin("4390225084680237490").done();
+    b.aggregate("elements", 0x7b3cd253805b75a9L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x3ced3674405ff18eL).optional(true).ordered(true).multiple(true).origin("8880203821345371561").done();
+    b.aggregate("processes", 0x7b3cd25380499495L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d811efL).optional(true).ordered(true).multiple(true).origin("8880203821344199829").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForProcess() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("NewLanguageMTM", "Process", 0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d811efL);
     b.class_(false, false, false);
-    // extends: NewLanguageMTM.structure.Element
-    b.super_(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d7bcd3L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:6c0627d3-4986-4ace-b681-5e8c12584872(NewLanguageMTM.structure)/6070516705893290479");
     b.version(3);
     b.property("numeration", 0x543ecec7f1d811f1L).type(PrimitiveTypeId.INTEGER).origin("6070516705893290481").done();
+    b.aggregate("flows", 0x7b3cd253804ccdc1L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d811ffL).optional(true).ordered(true).multiple(true).origin("8880203821344411073").done();
     b.alias("process");
     return b.create();
   }
