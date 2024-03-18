@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-7xrd3vtwpl6v84j77pda8wkwvgdhlhq" />
+<product version="3" modelHash="-6ln1ooa76u1k9b343418y91dfaotlfq">
+  <files names="DecProcess_Intention.java:IntentionsDescriptor.java" />
+</product>
 

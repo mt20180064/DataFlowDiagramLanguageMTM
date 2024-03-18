@@ -22,6 +22,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptFlow = createDescriptorForFlow();
   /*package*/ final ConceptDescriptor myConceptFlowsRepo = createDescriptorForFlowsRepo();
   /*package*/ final ConceptDescriptor myConceptProcess = createDescriptorForProcess();
+  /*package*/ final ConceptDescriptor myConceptSubProcess = createDescriptorForSubProcess();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -36,7 +37,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptDataFlow, myConceptDataStore, myConceptElement, myConceptElementInstance, myConceptElementReference, myConceptExternalEntity, myConceptFlow, myConceptFlowsRepo, myConceptProcess);
+    return Arrays.asList(myConceptDataFlow, myConceptDataStore, myConceptElement, myConceptElementInstance, myConceptElementReference, myConceptExternalEntity, myConceptFlow, myConceptFlowsRepo, myConceptProcess, myConceptSubProcess);
   }
 
   @Override
@@ -61,6 +62,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptFlowsRepo;
       case LanguageConceptSwitch.Process:
         return myConceptProcess;
+      case LanguageConceptSwitch.SubProcess:
+        return myConceptSubProcess;
       default:
         return null;
     }
@@ -147,7 +150,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:6c0627d3-4986-4ace-b681-5e8c12584872(NewLanguageMTM.structure)/6070516705893290499");
     b.version(3);
-    b.aggregate("flows", 0x543ecec7f1d81204L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d811ffL).optional(true).ordered(true).multiple(true).origin("6070516705893290500").done();
     b.aggregate("elements", 0x7b3cd253805b75a9L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x3ced3674405ff18eL).optional(true).ordered(true).multiple(true).origin("8880203821345371561").done();
     b.aggregate("processes", 0x7b3cd25380499495L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d811efL).optional(true).ordered(true).multiple(true).origin("8880203821344199829").done();
     return b.create();
@@ -160,7 +162,19 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(3);
     b.property("numeration", 0x543ecec7f1d811f1L).type(PrimitiveTypeId.STRING).origin("6070516705893290481").done();
     b.aggregate("flows", 0x7b3cd253804ccdc1L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d811ffL).optional(true).ordered(true).multiple(true).origin("8880203821344411073").done();
+    b.aggregate("subprocesses", 0x13171d15a2f3449L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x13171d15a3adad2L).optional(true).ordered(true).multiple(true).origin("85975011871896649").done();
     b.alias("process");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForSubProcess() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("NewLanguageMTM", "SubProcess", 0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x13171d15a3adad2L);
+    b.class_(false, false, false);
+    // extends: NewLanguageMTM.structure.Process
+    b.super_(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d811efL);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:6c0627d3-4986-4ace-b681-5e8c12584872(NewLanguageMTM.structure)/85975011872660178");
+    b.version(3);
+    b.property("nadproces", 0x13171d15a3adad6L).type(PrimitiveTypeId.STRING).origin("85975011872660182").done();
     return b.create();
   }
 }

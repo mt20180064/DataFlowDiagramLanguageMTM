@@ -18,6 +18,7 @@ public final class LanguageConceptSwitch {
   public static final int Flow = 6;
   public static final int FlowsRepo = 7;
   public static final int Process = 8;
+  public static final int SubProcess = 9;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL);
@@ -30,6 +31,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x543ecec7f1d811ffL, Flow);
     builder.put(0x543ecec7f1d81203L, FlowsRepo);
     builder.put(0x543ecec7f1d811efL, Process);
+    builder.put(0x13171d15a3adad2L, SubProcess);
     myIndex = builder.seal();
   }
 

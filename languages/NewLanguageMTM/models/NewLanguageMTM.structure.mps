@@ -79,6 +79,13 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="5gYNGvLQ17Z" resolve="Flow" />
     </node>
+    <node concept="1TJgyj" id="4Lst5qbNh9" role="1TKVEi">
+      <property role="IQ2ns" value="85975011871896649" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="subprocesses" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="4Lst5qeHFi" resolve="SubProcess" />
+    </node>
     <node concept="PrWs8" id="7GWO_e0jcRC" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -154,13 +161,6 @@
     <property role="TrG5h" value="FlowsRepo" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="5gYNGvLQ184" role="1TKVEi">
-      <property role="IQ2ns" value="6070516705893290500" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="flows" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="5gYNGvLQ17Z" resolve="Flow" />
-    </node>
     <node concept="1TJgyj" id="7GWO_e0mRmD" role="1TKVEi">
       <property role="IQ2ns" value="8880203821345371561" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -207,6 +207,19 @@
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="5gYNGvLPVNj" resolve="Element" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4Lst5qeHFi">
+    <property role="EcuMT" value="85975011872660178" />
+    <property role="TrG5h" value="SubProcess" />
+    <ref role="1TJDcQ" node="5gYNGvLQ17J" resolve="Process" />
+    <node concept="PrWs8" id="4Lst5qeHFj" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="4Lst5qeHFm" role="1TKVEl">
+      <property role="IQ2nx" value="85975011872660182" />
+      <property role="TrG5h" value="nadproces" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

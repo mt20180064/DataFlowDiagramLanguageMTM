@@ -18,6 +18,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Flow;
   private ConceptPresentation props_FlowsRepo;
   private ConceptPresentation props_Process;
+  private ConceptPresentation props_SubProcess;
 
   @Override
   @Nullable
@@ -90,6 +91,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Process = cpb.create();
         }
         return props_Process;
+      case LanguageConceptSwitch.SubProcess:
+        if (props_SubProcess == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_SubProcess = cpb.create();
+        }
+        return props_SubProcess;
     }
     return null;
   }
