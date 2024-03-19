@@ -54,6 +54,8 @@
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
+      <concept id="1198257632966" name="jetbrains.mps.lang.editor.structure.CellModel_BlockStart" flags="ng" index="3XI7vg" />
+      <concept id="1198257747917" name="jetbrains.mps.lang.editor.structure.CellModel_BlockEnd" flags="ng" index="3XIzrr" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -136,66 +138,51 @@
         </node>
         <node concept="2iRfu4" id="5gYNGvLQYdM" role="2iSdaV" />
       </node>
-      <node concept="3EZMnI" id="5gYNGvLQcUW" role="3EZMnx">
-        <node concept="VPM3Z" id="5gYNGvLQcUY" role="3F10Kt" />
-        <node concept="2iRfu4" id="5gYNGvLQcV1" role="2iSdaV" />
-        <node concept="3XFhqQ" id="5gYNGvLSRVk" role="3EZMnx" />
-        <node concept="3F0ifn" id="3NHdBh0s62q" role="3EZMnx">
-          <property role="3F0ifm" value="Daje ulaz u proces:  " />
-        </node>
-        <node concept="1iCGBv" id="7GWO_e0jcSG" role="3EZMnx">
+      <node concept="3EZMnI" id="4Lst5qhSyQ" role="3EZMnx">
+        <node concept="VPM3Z" id="4Lst5qhSyS" role="3F10Kt" />
+        <node concept="1iCGBv" id="4Lst5qhSz9" role="3EZMnx">
           <ref role="1NtTu8" to="x9er:7GWO_e0jcSl" resolve="input" />
-          <node concept="1sVBvm" id="7GWO_e0jcSI" role="1sWHZn">
-            <node concept="3F0A7n" id="2dvLiYXIl72" role="2wV5jI">
+          <node concept="1sVBvm" id="4Lst5qhSzb" role="1sWHZn">
+            <node concept="3F0A7n" id="4Lst5qhSzi" role="2wV5jI">
               <property role="1Intyy" value="true" />
               <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
             </node>
           </node>
         </node>
-      </node>
-      <node concept="3EZMnI" id="5gYNGvLRAMW" role="3EZMnx">
-        <node concept="VPM3Z" id="5gYNGvLRAMY" role="3F10Kt" />
-        <node concept="3XFhqQ" id="5gYNGvLSRVz" role="3EZMnx" />
-        <node concept="3F0ifn" id="7GWO_e0jcT5" role="3EZMnx">
-          <property role="3F0ifm" value="Prima izlaz iz procesa:  " />
+        <node concept="2iRfu4" id="4Lst5qhSyV" role="2iSdaV" />
+        <node concept="3EZMnI" id="4Lst5qhSzq" role="3EZMnx">
+          <node concept="VPM3Z" id="4Lst5qhSzs" role="3F10Kt" />
+          <node concept="3EZMnI" id="4Lst5qhSzB" role="3EZMnx">
+            <node concept="VPM3Z" id="4Lst5qhSzD" role="3F10Kt" />
+            <node concept="2iRfu4" id="4Lst5qhSzG" role="2iSdaV" />
+            <node concept="3F0ifn" id="4Lst5qi$4x" role="3EZMnx">
+              <property role="3F0ifm" value="---------------------&gt;" />
+            </node>
+          </node>
+          <node concept="3F1sOY" id="4Lst5qhS$3" role="3EZMnx">
+            <ref role="1NtTu8" to="x9er:2dvLiYXJ7lY" resolve="inputFlow" />
+          </node>
+          <node concept="2iRkQZ" id="4Lst5qhSzv" role="2iSdaV" />
         </node>
-        <node concept="1iCGBv" id="7GWO_e0jcTd" role="3EZMnx">
+        <node concept="1iCGBv" id="4Lst5qhS$n" role="3EZMnx">
           <ref role="1NtTu8" to="x9er:7GWO_e0jcSn" resolve="output" />
-          <node concept="1sVBvm" id="7GWO_e0jcTf" role="1sWHZn">
-            <node concept="3F0A7n" id="2dvLiYXIl76" role="2wV5jI">
+          <node concept="1sVBvm" id="4Lst5qhS$p" role="1sWHZn">
+            <node concept="3F0A7n" id="4Lst5qhS$F" role="2wV5jI">
               <property role="1Intyy" value="true" />
               <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
             </node>
           </node>
         </node>
-        <node concept="2iRfu4" id="5gYNGvLRAN1" role="2iSdaV" />
-      </node>
-      <node concept="3EZMnI" id="2dvLiYXI$kj" role="3EZMnx">
-        <node concept="VPM3Z" id="2dvLiYXI$kl" role="3F10Kt" />
-        <node concept="3F0ifn" id="2dvLiYXJ7lS" role="3EZMnx">
-          <property role="3F0ifm" value="---&gt;ulaz u proces:" />
+        <node concept="3EZMnI" id="4Lst5qhSAE" role="3EZMnx">
+          <node concept="VPM3Z" id="4Lst5qhSAG" role="3F10Kt" />
+          <node concept="3F0ifn" id="4Lst5qi$4$" role="3EZMnx">
+            <property role="3F0ifm" value="----------------&gt;" />
+          </node>
+          <node concept="3F1sOY" id="4Lst5qhSBb" role="3EZMnx">
+            <ref role="1NtTu8" to="x9er:2dvLiYXJ7m4" resolve="outputFlow" />
+          </node>
+          <node concept="2iRkQZ" id="4Lst5qhSAJ" role="2iSdaV" />
         </node>
-        <node concept="2iRfu4" id="2dvLiYXI$ko" role="2iSdaV" />
-        <node concept="3F1sOY" id="2dvLiYXJ7mm" role="3EZMnx">
-          <ref role="1NtTu8" to="x9er:2dvLiYXJ7lY" resolve="inputFlow" />
-        </node>
-      </node>
-      <node concept="3EZMnI" id="2dvLiYXI$lM" role="3EZMnx">
-        <node concept="VPM3Z" id="2dvLiYXI$lO" role="3F10Kt" />
-        <node concept="3F0ifn" id="2dvLiYXJ7mr" role="3EZMnx">
-          <property role="3F0ifm" value="---&gt;izlaz iz procesa:" />
-        </node>
-        <node concept="2iRfu4" id="2dvLiYXI$lR" role="2iSdaV" />
-        <node concept="3F1sOY" id="2dvLiYXJ7mx" role="3EZMnx">
-          <ref role="1NtTu8" to="x9er:2dvLiYXJ7m4" resolve="outputFlow" />
-        </node>
-      </node>
-      <node concept="3EZMnI" id="5gYNGvLQYif" role="3EZMnx">
-        <node concept="VPM3Z" id="5gYNGvLQYih" role="3F10Kt" />
-        <node concept="3F0ifn" id="5gYNGvLQYiT" role="3EZMnx">
-          <property role="3F0ifm" value="-------------------" />
-        </node>
-        <node concept="2iRfu4" id="5gYNGvLQYik" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="5gYNGvLQcUS" role="2iSdaV" />
     </node>
@@ -210,6 +197,7 @@
         </node>
         <node concept="2iRfu4" id="2dvLiYXKnUO" role="2iSdaV" />
       </node>
+      <node concept="3XI7vg" id="4Lst5qkW1A" role="3EZMnx" />
       <node concept="2iRkQZ" id="7GWO_e0jcRj" role="2iSdaV" />
       <node concept="3EZMnI" id="7GWO_e0jcRo" role="3EZMnx">
         <node concept="VPM3Z" id="7GWO_e0jcRq" role="3F10Kt" />
@@ -225,15 +213,16 @@
         <node concept="VPM3Z" id="7GWO_e0jcRT" role="3F10Kt" />
         <node concept="3F2HdR" id="7GWO_e0jcSe" role="3EZMnx">
           <ref role="1NtTu8" to="x9er:7GWO_e0jcR1" resolve="flows" />
-          <node concept="2iRfu4" id="7GWO_e0jcSg" role="2czzBx" />
+          <node concept="2iRkQZ" id="4Lst5qkgAR" role="2czzBx" />
         </node>
-        <node concept="2iRfu4" id="7GWO_e0jcRW" role="2iSdaV" />
+        <node concept="2iRkQZ" id="4Lst5qjfx2" role="2iSdaV" />
       </node>
       <node concept="3F2HdR" id="4Lst5qguW6" role="3EZMnx">
         <ref role="1NtTu8" to="x9er:4Lst5qbNh9" resolve="subprocesses" />
-        <node concept="2iRfu4" id="4Lst5qguW9" role="2czzBx" />
         <node concept="VPM3Z" id="4Lst5qguWa" role="3F10Kt" />
+        <node concept="2iRkQZ" id="4Lst5qkgAO" role="2czzBx" />
       </node>
+      <node concept="3XIzrr" id="4Lst5qkW0Y" role="3EZMnx" />
     </node>
   </node>
   <node concept="24kQdi" id="5gYNGvLQDNn">
