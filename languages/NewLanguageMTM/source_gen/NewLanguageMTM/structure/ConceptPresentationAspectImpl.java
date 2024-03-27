@@ -11,6 +11,7 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_DataFlow;
   private ConceptPresentation props_DataFlowInstance;
+  private ConceptPresentation props_DataFlowReference;
   private ConceptPresentation props_DataStore;
   private ConceptPresentation props_Element;
   private ConceptPresentation props_ElementInstance;
@@ -41,6 +42,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_DataFlowInstance = cpb.create();
         }
         return props_DataFlowInstance;
+      case LanguageConceptSwitch.DataFlowReference:
+        if (props_DataFlowReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x623cd6c36082c0f0L, 0x623cd6c36082c0f1L, "dataFlowRef", "", "");
+          props_DataFlowReference = cpb.create();
+        }
+        return props_DataFlowReference;
       case LanguageConceptSwitch.DataStore:
         if (props_DataStore == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

@@ -15,6 +15,7 @@ import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptDataFlow = createDescriptorForDataFlow();
   /*package*/ final ConceptDescriptor myConceptDataFlowInstance = createDescriptorForDataFlowInstance();
+  /*package*/ final ConceptDescriptor myConceptDataFlowReference = createDescriptorForDataFlowReference();
   /*package*/ final ConceptDescriptor myConceptDataStore = createDescriptorForDataStore();
   /*package*/ final ConceptDescriptor myConceptElement = createDescriptorForElement();
   /*package*/ final ConceptDescriptor myConceptElementInstance = createDescriptorForElementInstance();
@@ -39,7 +40,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptDataFlow, myConceptDataFlowInstance, myConceptDataStore, myConceptElement, myConceptElementInstance, myConceptElementReference, myConceptExternalEntity, myConceptFlow, myConceptFlowsRepo, myConceptProcess, myConceptSubProcess, myConceptSubProcessFlow);
+    return Arrays.asList(myConceptDataFlow, myConceptDataFlowInstance, myConceptDataFlowReference, myConceptDataStore, myConceptElement, myConceptElementInstance, myConceptElementReference, myConceptExternalEntity, myConceptFlow, myConceptFlowsRepo, myConceptProcess, myConceptSubProcess, myConceptSubProcessFlow);
   }
 
   @Override
@@ -50,6 +51,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptDataFlow;
       case LanguageConceptSwitch.DataFlowInstance:
         return myConceptDataFlowInstance;
+      case LanguageConceptSwitch.DataFlowReference:
+        return myConceptDataFlowReference;
       case LanguageConceptSwitch.DataStore:
         return myConceptDataStore;
       case LanguageConceptSwitch.Element:
@@ -88,6 +91,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(3);
     b.property("description", 0x543ecec7f1d811fcL).type(PrimitiveTypeId.STRING).origin("6070516705893290492").done();
     b.property("value", 0x543ecec7f1dc63deL).type(PrimitiveTypeId.STRING).origin("6070516705893573598").done();
+    b.aggregate("dataFlowInstance", 0x623cd6c3607a7c8bL).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x623cd6c36070995bL).optional(true).ordered(true).multiple(true).origin("7078768848945183883").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForDataFlowInstance() {
@@ -97,6 +101,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:6c0627d3-4986-4ace-b681-5e8c12584872(NewLanguageMTM.structure)/7078768848944535899");
     b.version(3);
     b.aggregate("dataFlow", 0x623cd6c36070995dL).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d811f8L).optional(false).ordered(true).multiple(false).origin("7078768848944535901").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForDataFlowReference() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("NewLanguageMTM", "DataFlowReference", 0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x623cd6c36082c0f0L);
+    b.class_(false, false, false);
+    b.origin("r:6c0627d3-4986-4ace-b681-5e8c12584872(NewLanguageMTM.structure)/7078768848945725680");
+    b.version(3);
+    b.associate("dataFlowRef", 0x623cd6c36082c0f1L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x623cd6c36070995bL).optional(false).origin("7078768848945725681").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForDataStore() {
@@ -191,6 +203,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:6c0627d3-4986-4ace-b681-5e8c12584872(NewLanguageMTM.structure)/85975011872660178");
     b.version(3);
     b.property("nadproces", 0x13171d15a3adad6L).type(PrimitiveTypeId.STRING).origin("85975011872660182").done();
+    b.aggregate("flow", 0x623cd6c360763f2eL).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x623cd6c360709960L).optional(true).ordered(true).multiple(true).origin("7078768848944906030").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSubProcessFlow() {
@@ -199,8 +212,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:6c0627d3-4986-4ace-b681-5e8c12584872(NewLanguageMTM.structure)/7078768848944535904");
     b.version(3);
-    b.associate("dataFlowIn", 0x623cd6c360709963L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x623cd6c36070995bL).optional(false).origin("7078768848944535907").done();
-    b.associate("dataFlowOut", 0x623cd6c360709965L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x623cd6c36070995bL).optional(false).origin("7078768848944535909").done();
+    b.associate("dataFlowIn", 0x623cd6c360709963L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d811f8L).optional(false).origin("7078768848944535907").done();
+    b.associate("dataFlowOut", 0x623cd6c360709965L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d811f8L).optional(false).origin("7078768848944535909").done();
     b.associate("inputFlow", 0x623cd6c360709968L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x3ced3674405ff18eL).optional(false).origin("7078768848944535912").done();
     b.associate("outputFlow", 0x623cd6c36070996cL).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x3ced3674405ff18eL).optional(false).origin("7078768848944535916").done();
     return b.create();
