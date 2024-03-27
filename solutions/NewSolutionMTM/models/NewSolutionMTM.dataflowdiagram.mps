@@ -29,9 +29,7 @@
         <child id="2548972722952369534" name="inputFlow" index="2uSV1h" />
         <child id="2548972722952369540" name="outputFlow" index="2uSV2F" />
       </concept>
-      <concept id="6070516705893290488" name="NewLanguageMTM.structure.DataFlow" flags="ng" index="2_THWZ">
-        <property id="6070516705893290492" name="description" index="2_THWV" />
-      </concept>
+      <concept id="6070516705893290488" name="NewLanguageMTM.structure.DataFlow" flags="ng" index="2_THWZ" />
       <concept id="6070516705893268691" name="NewLanguageMTM.structure.Element" flags="ng" index="2_Un8k" />
       <concept id="85975011872660178" name="NewLanguageMTM.structure.SubProcess" flags="ng" index="1r2UG3">
         <child id="7078768848944906030" name="flow" index="2iIBH" />
@@ -48,99 +46,92 @@
   </registry>
   <node concept="2_THN4" id="2dvLiYXH_34">
     <property role="TrG5h" value="IS studentska sluzba" />
-    <node concept="2_THWC" id="2dvLiYXI$i6" role="3Vtkr6">
+    <node concept="2_THWC" id="DpEPWg1oRK" role="3Vtkr6">
+      <property role="2_THWQ" value="Proces 1" />
       <property role="TrG5h" value="Upis" />
-      <property role="2_THWQ" value="Proces 1 " />
       <property role="1rGK0K" value="Prvi nivo dekompozicije procesa: Upis" />
-      <node concept="2_THWS" id="2dvLiYXI$i8" role="3Vs1Yi">
+      <node concept="2_THWS" id="DpEPWg2svA" role="3Vs1Yi">
         <property role="TrG5h" value="Tok  1" />
-        <ref role="3Vs1L6" node="2dvLiYXI$ia" resolve="Kadrovska evidencija" />
-        <ref role="3Vs1L4" node="2dvLiYXI$hO" resolve="Profesor" />
-        <node concept="2_THWZ" id="2dvLiYXJzpT" role="2uSV1h">
-          <property role="TrG5h" value="informacije o upisanima" />
-          <property role="2_THWV" value="dsds" />
-        </node>
-        <node concept="2_THWZ" id="2dvLiYXJzpV" role="2uSV2F">
-          <property role="TrG5h" value="nastavne grupe" />
-          <property role="2_THWV" value="dsds" />
-        </node>
-      </node>
-      <node concept="2_THWS" id="2dvLiYXJM1I" role="3Vs1Yi">
-        <property role="TrG5h" value="Tok  2" />
         <ref role="3Vs1L6" node="2dvLiYXIl6S" resolve="Student" />
         <ref role="3Vs1L4" node="2dvLiYXI$ii" resolve="Dosije studenta" />
-        <node concept="2_THWZ" id="2dvLiYXJM1J" role="2uSV1h">
+        <node concept="2_THWZ" id="DpEPWg2svB" role="2uSV1h">
           <property role="TrG5h" value="dokumenta za upis" />
         </node>
-        <node concept="2_THWZ" id="2dvLiYXJM1K" role="2uSV2F">
-          <property role="TrG5h" value="evidentirana dokumenta za upis" />
+        <node concept="2_THWZ" id="DpEPWg2svC" role="2uSV2F">
+          <property role="TrG5h" value="spisak upisanih studenata" />
         </node>
       </node>
-      <node concept="2_THWS" id="2dvLiYXJM1R" role="3Vs1Yi">
-        <property role="TrG5h" value="Tok  3" />
-        <ref role="3Vs1L6" node="2dvLiYXI$hO" resolve="Profesor" />
+      <node concept="2_THWS" id="DpEPWg2Ynd" role="3Vs1Yi">
+        <property role="TrG5h" value="Tok  2" />
+        <ref role="3Vs1L6" node="2dvLiYXI$ia" resolve="Kadrovska evidencija" />
         <ref role="3Vs1L4" node="2dvLiYXI$hO" resolve="Profesor" />
-        <node concept="2_THWZ" id="2dvLiYXJM1S" role="2uSV1h">
+        <node concept="2_THWZ" id="DpEPWg2Yne" role="2uSV1h">
+          <property role="TrG5h" value="rezultati prijemnog" />
+        </node>
+        <node concept="2_THWZ" id="DpEPWg2Ynk" role="2uSV2F">
+          <property role="TrG5h" value="nastavni plan" />
+        </node>
+      </node>
+      <node concept="2_THWS" id="DpEPWg2Ynm" role="3Vs1Yi">
+        <property role="TrG5h" value="Tok  3" />
+        <ref role="3Vs1L6" node="2dvLiYXIl6S" resolve="Student" />
+        <ref role="3Vs1L4" node="2dvLiYXI$ii" resolve="Dosije studenta" />
+        <node concept="2_THWZ" id="DpEPWg2Ynn" role="2uSV1h">
           <property role="TrG5h" value="dokumenta za prijemni ispit" />
         </node>
-        <node concept="2_THWZ" id="2dvLiYXJM1T" role="2uSV2F">
+        <node concept="2_THWZ" id="DpEPWg2Ynw" role="2uSV2F">
           <property role="TrG5h" value="spisak za prijemni ispit" />
         </node>
       </node>
-      <node concept="2_THWS" id="2dvLiYXJM23" role="3Vs1Yi">
-        <property role="TrG5h" value="Tok  4" />
-        <ref role="3Vs1L6" node="2dvLiYXI$hO" resolve="Profesor" />
-        <ref role="3Vs1L4" node="2dvLiYXIl6S" resolve="Student" />
-        <node concept="2_THWZ" id="2dvLiYXJM24" role="2uSV1h">
-          <property role="TrG5h" value="rezultati prijemnog ispita" />
-        </node>
-        <node concept="2_THWZ" id="2dvLiYXJM25" role="2uSV2F">
-          <property role="TrG5h" value="izvestaj o prijemnom ispitu" />
-        </node>
-      </node>
-      <node concept="1r2UG3" id="DpEPWfVMP5" role="1r7$mo">
-        <property role="2_THWQ" value="Proces 1 .1" />
+      <node concept="1r2UG3" id="DpEPWg41Ve" role="1r7$mo">
+        <property role="2_THWQ" value="Proces 1.1" />
         <property role="TrG5h" value="Evidentiranje kandidata" />
-        <node concept="2j4Yz" id="DpEPWfVMPd" role="2iIBH">
+        <node concept="2j4Yz" id="DpEPWg41Vu" role="2iIBH">
           <ref role="2j4YF" node="2dvLiYXIl6S" resolve="Student" />
           <ref role="2j4YJ" node="68WPGdws4gP" resolve="Kandidati za upis" />
-          <ref role="2j4Yw" node="2dvLiYXJM1J" resolve="dokumenta za upis" />
-          <ref role="2j4YA" node="2dvLiYXJM1K" resolve="evidentirana dokumenta za upis" />
+          <ref role="2j4Yw" node="DpEPWg2svB" resolve="dokumenta za upis" />
+          <ref role="2j4YA" node="DpEPWg2svC" resolve="spisak upisanih studenata" />
         </node>
       </node>
-      <node concept="1r2UG3" id="DpEPWfVMP6" role="1r7$mo">
-        <property role="2_THWQ" value="Proces 1 .2" />
+      <node concept="1r2UG3" id="DpEPWg41Vf" role="1r7$mo">
+        <property role="2_THWQ" value="Proces 1.2" />
+        <property role="TrG5h" value="Izvestavanje kandidata" />
+        <node concept="2j4Yz" id="DpEPWg41W4" role="2iIBH">
+          <ref role="2j4YF" node="68WPGdws4gP" resolve="Kandidati za upis" />
+          <ref role="2j4YJ" node="2dvLiYXIl6S" resolve="Student" />
+          <ref role="2j4Yw" node="DpEPWg2Yne" resolve="rezultati prijemnog" />
+          <ref role="2j4YA" node="DpEPWg2Ynw" resolve="spisak za prijemni ispit" />
+        </node>
       </node>
-      <node concept="1r2UG3" id="DpEPWfVMP7" role="1r7$mo">
-        <property role="2_THWQ" value="Proces 1 .3" />
-      </node>
-      <node concept="1r2UG3" id="DpEPWfVMP8" role="1r7$mo">
-        <property role="2_THWQ" value="Proces 1 .4" />
+      <node concept="1r2UG3" id="DpEPWg41Vg" role="1r7$mo">
+        <property role="2_THWQ" value="Proces 1.3" />
+        <property role="TrG5h" value="Upis godine" />
+        <node concept="2j4Yz" id="DpEPWg41W6" role="2iIBH">
+          <ref role="2j4YF" node="2dvLiYXI$ii" resolve="Dosije studenta" />
+          <ref role="2j4YJ" node="2dvLiYXKnSZ" resolve="Nastavni plan" />
+        </node>
       </node>
     </node>
-    <node concept="2_THWC" id="2dvLiYXKnTS" role="3Vtkr6">
-      <property role="TrG5h" value="Izdavanje uverenja" />
-      <property role="2_THWQ" value="Proces 3" />
-      <node concept="2_THWS" id="2dvLiYXKnUk" role="3Vs1Yi">
+    <node concept="2_THWC" id="DpEPWg55u5" role="3Vtkr6">
+      <property role="2_THWQ" value="Proces 2" />
+      <property role="TrG5h" value="Obrada ispita" />
+      <node concept="2_THWS" id="DpEPWg55un" role="3Vs1Yi">
         <property role="TrG5h" value="Tok  1" />
-        <ref role="3Vs1L6" node="2dvLiYXIl6S" resolve="Student" />
-        <ref role="3Vs1L4" node="2dvLiYXIl6S" resolve="Student" />
-        <node concept="2_THWZ" id="2dvLiYXKnUl" role="2uSV1h">
-          <property role="TrG5h" value="zahtev o uverenju" />
-        </node>
-        <node concept="2_THWZ" id="2dvLiYXKnUm" role="2uSV2F">
-          <property role="TrG5h" value="uverenje o studiranju" />
+        <ref role="3Vs1L6" node="2dvLiYXI$hO" resolve="Profesor" />
+        <ref role="3Vs1L4" node="2dvLiYXI$ii" resolve="Dosije studenta" />
+        <node concept="2_THWZ" id="DpEPWg55uo" role="2uSV1h">
+          <property role="TrG5h" value="rezultati ispita" />
         </node>
       </node>
-      <node concept="2_THWS" id="2dvLiYXKnUq" role="3Vs1Yi">
+      <node concept="2_THWS" id="DpEPWg55uB" role="3Vs1Yi">
         <property role="TrG5h" value="Tok  2" />
-        <ref role="3Vs1L6" node="2dvLiYXI$ii" resolve="Dosije studenta" />
-        <ref role="3Vs1L4" node="2dvLiYXIl6S" resolve="Student" />
-        <node concept="2_THWZ" id="2dvLiYXKnUr" role="2uSV1h">
-          <property role="TrG5h" value="informacije o studentu" />
+        <ref role="3Vs1L6" node="2dvLiYXIl6S" resolve="Student" />
+        <ref role="3Vs1L4" node="2dvLiYXI$hO" resolve="Profesor" />
+        <node concept="2_THWZ" id="DpEPWg55uC" role="2uSV1h">
+          <property role="TrG5h" value="ispitna prijava" />
         </node>
-        <node concept="2_THWZ" id="2dvLiYXKnUs" role="2uSV2F">
-          <property role="TrG5h" value="evidentirano izdavanje overenja" />
+        <node concept="2_THWZ" id="DpEPWg55uH" role="2uSV2F">
+          <property role="TrG5h" value="ispitni spisak" />
         </node>
       </node>
     </node>

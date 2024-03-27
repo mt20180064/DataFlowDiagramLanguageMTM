@@ -168,7 +168,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.associate("input", 0x7b3cd253804cce15L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x3ced3674405ff18eL).optional(false).origin("8880203821344411157").done();
     b.associate("output", 0x7b3cd253804cce17L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x3ced3674405ff18eL).optional(false).origin("8880203821344411159").done();
     b.aggregate("inputFlow", 0x235fc52fbdbc757eL).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d811f8L).optional(false).ordered(true).multiple(false).origin("2548972722952369534").done();
-    b.aggregate("outputFlow", 0x235fc52fbdbc7584L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d811f8L).optional(false).ordered(true).multiple(false).origin("2548972722952369540").done();
+    b.aggregate("outputFlow", 0x235fc52fbdbc7584L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d811f8L).optional(true).ordered(true).multiple(false).origin("2548972722952369540").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForFlowsRepo() {
@@ -203,7 +203,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:6c0627d3-4986-4ace-b681-5e8c12584872(NewLanguageMTM.structure)/85975011872660178");
     b.version(3);
     b.property("nadproces", 0x13171d15a3adad6L).type(PrimitiveTypeId.STRING).origin("85975011872660182").done();
-    b.aggregate("flow", 0x623cd6c360763f2eL).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x623cd6c360709960L).optional(true).ordered(true).multiple(true).origin("7078768848944906030").done();
+    b.aggregate("flow", 0x623cd6c360763f2eL).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x623cd6c360709960L).optional(false).ordered(true).multiple(false).origin("7078768848944906030").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSubProcessFlow() {
@@ -212,8 +212,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:6c0627d3-4986-4ace-b681-5e8c12584872(NewLanguageMTM.structure)/7078768848944535904");
     b.version(3);
-    b.associate("dataFlowIn", 0x623cd6c360709963L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d811f8L).optional(false).origin("7078768848944535907").done();
-    b.associate("dataFlowOut", 0x623cd6c360709965L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d811f8L).optional(false).origin("7078768848944535909").done();
+    b.associate("dataFlowIn", 0x623cd6c360709963L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d811f8L).optional(true).origin("7078768848944535907").done();
+    b.associate("dataFlowOut", 0x623cd6c360709965L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d811f8L).optional(true).origin("7078768848944535909").done();
     b.associate("inputFlow", 0x623cd6c360709968L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x3ced3674405ff18eL).optional(false).origin("7078768848944535912").done();
     b.associate("outputFlow", 0x623cd6c36070996cL).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x3ced3674405ff18eL).optional(false).origin("7078768848944535916").done();
     return b.create();
