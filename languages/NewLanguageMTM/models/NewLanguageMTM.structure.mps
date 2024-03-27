@@ -72,6 +72,11 @@
       <property role="TrG5h" value="numeration" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="4Lst5qwB7x" role="1TKVEl">
+      <property role="IQ2nx" value="85975011877351905" />
+      <property role="TrG5h" value="state" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="7GWO_e0jcR1" role="1TKVEi">
       <property role="IQ2ns" value="8880203821344411073" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -220,6 +225,53 @@
       <property role="IQ2nx" value="85975011872660182" />
       <property role="TrG5h" value="nadproces" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="68WPGdws9_r">
+    <property role="EcuMT" value="7078768848944535899" />
+    <property role="TrG5h" value="DataFlowInstance" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="68WPGdws9_t" role="1TKVEi">
+      <property role="IQ2ns" value="7078768848944535901" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="dataFlow" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="5gYNGvLQ17S" resolve="DataFlow" />
+    </node>
+    <node concept="PrWs8" id="68WPGdws9B4" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="68WPGdws9_w">
+    <property role="EcuMT" value="7078768848944535904" />
+    <property role="TrG5h" value="SubProcessFlow" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="68WPGdws9_x" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="68WPGdws9_z" role="1TKVEi">
+      <property role="IQ2ns" value="7078768848944535907" />
+      <property role="20kJfa" value="dataFlowIn" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="68WPGdws9_r" resolve="DataFlowInstance" />
+    </node>
+    <node concept="1TJgyj" id="68WPGdws9__" role="1TKVEi">
+      <property role="IQ2ns" value="7078768848944535909" />
+      <property role="20kJfa" value="dataFlowOut" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="68WPGdws9_r" resolve="DataFlowInstance" />
+    </node>
+    <node concept="1TJgyj" id="68WPGdws9_C" role="1TKVEi">
+      <property role="IQ2ns" value="7078768848944535912" />
+      <property role="20kJfa" value="inputFlow" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3NHdBh0nZ6e" resolve="ElementInstance" />
+    </node>
+    <node concept="1TJgyj" id="68WPGdws9_G" role="1TKVEi">
+      <property role="IQ2ns" value="7078768848944535916" />
+      <property role="20kJfa" value="outputFlow" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3NHdBh0nZ6e" resolve="ElementInstance" />
     </node>
   </node>
 </model>

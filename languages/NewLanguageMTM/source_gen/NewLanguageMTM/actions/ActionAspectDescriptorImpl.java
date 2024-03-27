@@ -20,6 +20,8 @@ public class ActionAspectDescriptorImpl extends BaseActionAspectDescriptor imple
           return Collections.<NodeFactory>singletonList(new nodeFactorFlow.NodeFactory_6367742724885409776());
         case "Process":
           return Collections.<NodeFactory>singletonList(new nodeFactorProcess.NodeFactory_2548972722952699592());
+        case "SubProcess":
+          return Collections.<NodeFactory>singletonList(new nodeSubProcess.NodeFactory_85975011875360413());
         default:
       }
     }

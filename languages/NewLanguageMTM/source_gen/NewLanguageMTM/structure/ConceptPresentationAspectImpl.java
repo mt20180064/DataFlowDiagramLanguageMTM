@@ -10,6 +10,7 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_DataFlow;
+  private ConceptPresentation props_DataFlowInstance;
   private ConceptPresentation props_DataStore;
   private ConceptPresentation props_Element;
   private ConceptPresentation props_ElementInstance;
@@ -19,6 +20,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_FlowsRepo;
   private ConceptPresentation props_Process;
   private ConceptPresentation props_SubProcess;
+  private ConceptPresentation props_SubProcessFlow;
 
   @Override
   @Nullable
@@ -32,6 +34,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_DataFlow = cpb.create();
         }
         return props_DataFlow;
+      case LanguageConceptSwitch.DataFlowInstance:
+        if (props_DataFlowInstance == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_DataFlowInstance = cpb.create();
+        }
+        return props_DataFlowInstance;
       case LanguageConceptSwitch.DataStore:
         if (props_DataStore == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -98,6 +107,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_SubProcess = cpb.create();
         }
         return props_SubProcess;
+      case LanguageConceptSwitch.SubProcessFlow:
+        if (props_SubProcessFlow == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_SubProcessFlow = cpb.create();
+        }
+        return props_SubProcessFlow;
     }
     return null;
   }

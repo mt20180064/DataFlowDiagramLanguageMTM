@@ -197,7 +197,7 @@
         </node>
         <node concept="2iRfu4" id="2dvLiYXKnUO" role="2iSdaV" />
       </node>
-      <node concept="3XI7vg" id="4Lst5qkW1A" role="3EZMnx" />
+      <node concept="3XI7vg" id="4Lst5qpnYK" role="3EZMnx" />
       <node concept="2iRkQZ" id="7GWO_e0jcRj" role="2iSdaV" />
       <node concept="3EZMnI" id="7GWO_e0jcRo" role="3EZMnx">
         <node concept="VPM3Z" id="7GWO_e0jcRq" role="3F10Kt" />
@@ -217,12 +217,35 @@
         </node>
         <node concept="2iRkQZ" id="4Lst5qjfx2" role="2iSdaV" />
       </node>
-      <node concept="3F2HdR" id="4Lst5qguW6" role="3EZMnx">
-        <ref role="1NtTu8" to="x9er:4Lst5qbNh9" resolve="subprocesses" />
-        <node concept="VPM3Z" id="4Lst5qguWa" role="3F10Kt" />
-        <node concept="2iRkQZ" id="4Lst5qkgAO" role="2czzBx" />
+      <node concept="3EZMnI" id="4Lst5qrcvt" role="3EZMnx">
+        <node concept="VPM3Z" id="4Lst5qrcvv" role="3F10Kt" />
+        <node concept="3F0ifn" id="4Lst5qwI66" role="3EZMnx">
+          <property role="3F0ifm" value=" " />
+        </node>
+        <node concept="3EZMnI" id="4Lst5qwI6h" role="3EZMnx">
+          <node concept="VPM3Z" id="4Lst5qwI6j" role="3F10Kt" />
+          <node concept="3F0ifn" id="4Lst5qwI6_" role="3EZMnx">
+            <property role="3F0ifm" value="---&gt; " />
+          </node>
+          <node concept="3F0ifn" id="4Lst5qwI6J" role="3EZMnx">
+            <property role="3F0ifm" value="---&gt;  " />
+          </node>
+          <node concept="3F0ifn" id="4Lst5qwI71" role="3EZMnx">
+            <property role="3F0ifm" value="---&gt;  " />
+          </node>
+          <node concept="3XFhqQ" id="4Lst5qwI7b" role="3EZMnx" />
+          <node concept="2iRfu4" id="4Lst5qwI6m" role="2iSdaV" />
+        </node>
+        <node concept="3F0A7n" id="4Lst5qwB7B" role="3EZMnx">
+          <ref role="1NtTu8" to="x9er:4Lst5qwB7x" resolve="state" />
+        </node>
+        <node concept="3F2HdR" id="4Lst5qrcwv" role="3EZMnx">
+          <ref role="1NtTu8" to="x9er:4Lst5qbNh9" resolve="subprocesses" />
+          <node concept="2iRkQZ" id="4Lst5qrcwx" role="2czzBx" />
+        </node>
+        <node concept="2iRkQZ" id="4Lst5qrcvy" role="2iSdaV" />
       </node>
-      <node concept="3XIzrr" id="4Lst5qkW0Y" role="3EZMnx" />
+      <node concept="3XIzrr" id="4Lst5qpnZo" role="3EZMnx" />
     </node>
   </node>
   <node concept="24kQdi" id="5gYNGvLQDNn">
@@ -307,13 +330,20 @@
       <node concept="3XFhqQ" id="4Lst5qhavC" role="3EZMnx" />
       <node concept="3EZMnI" id="4Lst5qePS_" role="3EZMnx">
         <node concept="VPM3Z" id="4Lst5qePSB" role="3F10Kt" />
-        <node concept="3F0ifn" id="4Lst5qePSJ" role="3EZMnx">
-          <property role="3F0ifm" value="proces:  " />
-        </node>
-        <node concept="3F0A7n" id="4Lst5qePSP" role="3EZMnx">
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="3F0A7n" id="4Lst5qlFWd" role="3EZMnx">
+          <ref role="1NtTu8" to="x9er:5gYNGvLQ17L" resolve="numeration" />
         </node>
         <node concept="2iRfu4" id="4Lst5qePSE" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="4Lst5qlFWs" role="3EZMnx">
+        <node concept="VPM3Z" id="4Lst5qlFWu" role="3F10Kt" />
+        <node concept="3F0ifn" id="4Lst5qlFWK" role="3EZMnx">
+          <property role="3F0ifm" value="naziv: " />
+        </node>
+        <node concept="3F0A7n" id="4Lst5qlFWQ" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="2iRfu4" id="4Lst5qlFWx" role="2iSdaV" />
       </node>
       <node concept="3EZMnI" id="4Lst5qePTu" role="3EZMnx">
         <node concept="VPM3Z" id="4Lst5qePTw" role="3F10Kt" />
@@ -321,9 +351,90 @@
           <ref role="1NtTu8" to="x9er:7GWO_e0jcR1" resolve="flows" />
           <node concept="2iRfu4" id="4Lst5qePTJ" role="2czzBx" />
         </node>
-        <node concept="2iRfu4" id="4Lst5qePTz" role="2iSdaV" />
+        <node concept="2iRkQZ" id="4Lst5qtM6_" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="4Lst5qePSx" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="68WPGdws9_M">
+    <ref role="1XX52x" to="x9er:68WPGdws9_w" resolve="SubProcessFlow" />
+    <node concept="3EZMnI" id="68WPGdws9_O" role="2wV5jI">
+      <node concept="3EZMnI" id="68WPGdws9_X" role="3EZMnx">
+        <node concept="VPM3Z" id="68WPGdws9_Z" role="3F10Kt" />
+        <node concept="1iCGBv" id="68WPGdws9Ag" role="3EZMnx">
+          <ref role="1NtTu8" to="x9er:68WPGdws9_C" resolve="inputFlow" />
+          <node concept="1sVBvm" id="68WPGdws9Ai" role="1sWHZn">
+            <node concept="3F0A7n" id="68WPGdws9Bh" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+        <node concept="2iRfu4" id="68WPGdws9A2" role="2iSdaV" />
+        <node concept="3EZMnI" id="68WPGdws9Bq" role="3EZMnx">
+          <node concept="VPM3Z" id="68WPGdws9Bs" role="3F10Kt" />
+          <node concept="3F0ifn" id="68WPGdws9BF" role="3EZMnx">
+            <property role="3F0ifm" value="------------------------&gt;" />
+          </node>
+          <node concept="3EZMnI" id="68WPGdws9BL" role="3EZMnx">
+            <node concept="VPM3Z" id="68WPGdws9BN" role="3F10Kt" />
+            <node concept="1iCGBv" id="68WPGdws9BW" role="3EZMnx">
+              <ref role="1NtTu8" to="x9er:68WPGdws9_z" resolve="dataFlowIn" />
+              <node concept="1sVBvm" id="68WPGdws9BY" role="1sWHZn">
+                <node concept="3F0A7n" id="68WPGdws9C5" role="2wV5jI">
+                  <property role="1Intyy" value="true" />
+                  <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+            </node>
+            <node concept="2iRfu4" id="68WPGdws9BQ" role="2iSdaV" />
+          </node>
+          <node concept="2iRkQZ" id="68WPGdws9Bv" role="2iSdaV" />
+        </node>
+        <node concept="3EZMnI" id="68WPGdws9Co" role="3EZMnx">
+          <node concept="VPM3Z" id="68WPGdws9Cq" role="3F10Kt" />
+          <node concept="1iCGBv" id="68WPGdws9D4" role="3EZMnx">
+            <ref role="1NtTu8" to="x9er:68WPGdws9_G" resolve="outputFlow" />
+            <node concept="1sVBvm" id="68WPGdws9D6" role="1sWHZn">
+              <node concept="3F0A7n" id="68WPGdws9Dd" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="2iRfu4" id="68WPGdws9Ct" role="2iSdaV" />
+        </node>
+        <node concept="3EZMnI" id="68WPGdws9D_" role="3EZMnx">
+          <node concept="VPM3Z" id="68WPGdws9DB" role="3F10Kt" />
+          <node concept="3F0ifn" id="68WPGdws9E5" role="3EZMnx">
+            <property role="3F0ifm" value="--------------------------------------&gt;" />
+          </node>
+          <node concept="3EZMnI" id="68WPGdws9Eb" role="3EZMnx">
+            <node concept="VPM3Z" id="68WPGdws9Ed" role="3F10Kt" />
+            <node concept="1iCGBv" id="68WPGdws9Em" role="3EZMnx">
+              <ref role="1NtTu8" to="x9er:68WPGdws9__" resolve="dataFlowOut" />
+              <node concept="1sVBvm" id="68WPGdws9Eo" role="1sWHZn">
+                <node concept="3F0A7n" id="68WPGdws9Ev" role="2wV5jI">
+                  <property role="1Intyy" value="true" />
+                  <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+            </node>
+            <node concept="2iRfu4" id="68WPGdws9Eg" role="2iSdaV" />
+          </node>
+          <node concept="2iRkQZ" id="68WPGdws9DE" role="2iSdaV" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="68WPGdws9_V" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="68WPGdws9AV">
+    <ref role="1XX52x" to="x9er:68WPGdws9_r" resolve="DataFlowInstance" />
+    <node concept="3EZMnI" id="68WPGdws9AX" role="2wV5jI">
+      <node concept="3F0A7n" id="68WPGdws9B8" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="2iRfu4" id="68WPGdws9B0" role="2iSdaV" />
     </node>
   </node>
 </model>

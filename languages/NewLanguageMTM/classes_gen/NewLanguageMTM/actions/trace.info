@@ -7,7 +7,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
   <root>
     <file name="ActionAspectDescriptorImpl.java">
-      <unit at="12,0,30,0" name="NewLanguageMTM.actions.ActionAspectDescriptorImpl" />
+      <unit at="12,0,32,0" name="NewLanguageMTM.actions.ActionAspectDescriptorImpl" />
     </file>
   </root>
   <root nodeRef="r:476b2630-f3cb-4405-ac3d-6ecec1ec5384(NewLanguageMTM.actions)/2548972722952699591">
@@ -60,6 +60,29 @@
       <unit id="6367742724885409775" at="28,0,31,0" name="NewLanguageMTM.actions.nodeFactorFlow$LINKS" />
       <unit id="6367742724885409776" at="16,0,23,0" name="NewLanguageMTM.actions.nodeFactorFlow$NodeFactory_6367742724885409776" />
       <unit id="6367742724885409775" at="15,0,32,0" name="NewLanguageMTM.actions.nodeFactorFlow" />
+    </file>
+  </root>
+  <root nodeRef="r:476b2630-f3cb-4405-ac3d-6ecec1ec5384(NewLanguageMTM.actions)/85975011875360412">
+    <file name="nodeSubProcess.java">
+      <node id="85975011875364206" at="17,102,18,43" concept="2" />
+      <node id="85975011875364512" at="18,43,19,233" concept="0" />
+      <node id="85975011875360412" at="24,0,25,0" concept="4" trace="numeration$ZIRy" />
+      <node id="85975011875360412" at="28,0,29,0" concept="4" trace="subprocesses$jcCz" />
+      <node id="85975011875360413" at="17,0,21,0" concept="1" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="85975011875360413" at="17,102,19,233">
+        <var name="parent" id="85975011875364209" />
+      </scope>
+      <scope id="85975011875360413" at="17,0,21,0">
+        <var name="enclosingNode" id="85975011875360413" />
+        <var name="index" id="85975011875360413" />
+        <var name="model" id="85975011875360413" />
+        <var name="newNode" id="85975011875360413" />
+        <var name="sampleNode" id="85975011875360413" />
+      </scope>
+      <unit id="85975011875360412" at="23,0,26,0" name="NewLanguageMTM.actions.nodeSubProcess$PROPS" />
+      <unit id="85975011875360412" at="27,0,30,0" name="NewLanguageMTM.actions.nodeSubProcess$LINKS" />
+      <unit id="85975011875360413" at="16,0,22,0" name="NewLanguageMTM.actions.nodeSubProcess$NodeFactory_85975011875360413" />
+      <unit id="85975011875360412" at="15,0,31,0" name="NewLanguageMTM.actions.nodeSubProcess" />
     </file>
   </root>
 </debug-info>

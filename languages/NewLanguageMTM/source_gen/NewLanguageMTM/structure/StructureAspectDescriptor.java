@@ -14,6 +14,7 @@ import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptDataFlow = createDescriptorForDataFlow();
+  /*package*/ final ConceptDescriptor myConceptDataFlowInstance = createDescriptorForDataFlowInstance();
   /*package*/ final ConceptDescriptor myConceptDataStore = createDescriptorForDataStore();
   /*package*/ final ConceptDescriptor myConceptElement = createDescriptorForElement();
   /*package*/ final ConceptDescriptor myConceptElementInstance = createDescriptorForElementInstance();
@@ -23,6 +24,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptFlowsRepo = createDescriptorForFlowsRepo();
   /*package*/ final ConceptDescriptor myConceptProcess = createDescriptorForProcess();
   /*package*/ final ConceptDescriptor myConceptSubProcess = createDescriptorForSubProcess();
+  /*package*/ final ConceptDescriptor myConceptSubProcessFlow = createDescriptorForSubProcessFlow();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -37,7 +39,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptDataFlow, myConceptDataStore, myConceptElement, myConceptElementInstance, myConceptElementReference, myConceptExternalEntity, myConceptFlow, myConceptFlowsRepo, myConceptProcess, myConceptSubProcess);
+    return Arrays.asList(myConceptDataFlow, myConceptDataFlowInstance, myConceptDataStore, myConceptElement, myConceptElementInstance, myConceptElementReference, myConceptExternalEntity, myConceptFlow, myConceptFlowsRepo, myConceptProcess, myConceptSubProcess, myConceptSubProcessFlow);
   }
 
   @Override
@@ -46,6 +48,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     switch (myIndexSwitch.index(id)) {
       case LanguageConceptSwitch.DataFlow:
         return myConceptDataFlow;
+      case LanguageConceptSwitch.DataFlowInstance:
+        return myConceptDataFlowInstance;
       case LanguageConceptSwitch.DataStore:
         return myConceptDataStore;
       case LanguageConceptSwitch.Element:
@@ -64,6 +68,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptProcess;
       case LanguageConceptSwitch.SubProcess:
         return myConceptSubProcess;
+      case LanguageConceptSwitch.SubProcessFlow:
+        return myConceptSubProcessFlow;
       default:
         return null;
     }
@@ -82,6 +88,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(3);
     b.property("description", 0x543ecec7f1d811fcL).type(PrimitiveTypeId.STRING).origin("6070516705893290492").done();
     b.property("value", 0x543ecec7f1dc63deL).type(PrimitiveTypeId.STRING).origin("6070516705893573598").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForDataFlowInstance() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("NewLanguageMTM", "DataFlowInstance", 0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x623cd6c36070995bL);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:6c0627d3-4986-4ace-b681-5e8c12584872(NewLanguageMTM.structure)/7078768848944535899");
+    b.version(3);
+    b.aggregate("dataFlow", 0x623cd6c36070995dL).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d811f8L).optional(false).ordered(true).multiple(false).origin("7078768848944535901").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForDataStore() {
@@ -161,6 +176,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:6c0627d3-4986-4ace-b681-5e8c12584872(NewLanguageMTM.structure)/6070516705893290479");
     b.version(3);
     b.property("numeration", 0x543ecec7f1d811f1L).type(PrimitiveTypeId.STRING).origin("6070516705893290481").done();
+    b.property("state", 0x13171d15a8271e1L).type(PrimitiveTypeId.STRING).origin("85975011877351905").done();
     b.aggregate("flows", 0x7b3cd253804ccdc1L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d811ffL).optional(true).ordered(true).multiple(true).origin("8880203821344411073").done();
     b.aggregate("subprocesses", 0x13171d15a2f3449L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x13171d15a3adad2L).optional(true).ordered(true).multiple(true).origin("85975011871896649").done();
     b.alias("process");
@@ -175,6 +191,18 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:6c0627d3-4986-4ace-b681-5e8c12584872(NewLanguageMTM.structure)/85975011872660178");
     b.version(3);
     b.property("nadproces", 0x13171d15a3adad6L).type(PrimitiveTypeId.STRING).origin("85975011872660182").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForSubProcessFlow() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("NewLanguageMTM", "SubProcessFlow", 0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x623cd6c360709960L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:6c0627d3-4986-4ace-b681-5e8c12584872(NewLanguageMTM.structure)/7078768848944535904");
+    b.version(3);
+    b.associate("dataFlowIn", 0x623cd6c360709963L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x623cd6c36070995bL).optional(false).origin("7078768848944535907").done();
+    b.associate("dataFlowOut", 0x623cd6c360709965L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x623cd6c36070995bL).optional(false).origin("7078768848944535909").done();
+    b.associate("inputFlow", 0x623cd6c360709968L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x3ced3674405ff18eL).optional(false).origin("7078768848944535912").done();
+    b.associate("outputFlow", 0x623cd6c36070996cL).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x3ced3674405ff18eL).optional(false).origin("7078768848944535916").done();
     return b.create();
   }
 }

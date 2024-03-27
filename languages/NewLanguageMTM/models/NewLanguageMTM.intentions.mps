@@ -16,6 +16,12 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="1153417849900" name="jetbrains.mps.baseLanguage.structure.GreaterThanOrEqualsExpression" flags="nn" index="2d3UOw" />
+      <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
+        <child id="1239714902950" name="expression" index="2$L3a6" />
+      </concept>
+      <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
+        <child id="1154032183016" name="body" index="2LFqv$" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -29,6 +35,7 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -48,6 +55,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -56,6 +64,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
     </language>
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
       <concept id="1192794744107" name="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" flags="ig" index="2S6QgY" />
@@ -93,6 +102,11 @@
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
+      <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
+        <child id="1153944400369" name="variable" index="2Gsz3X" />
+        <child id="1153944424730" name="inputSequence" index="2GsD0m" />
+      </concept>
+      <concept id="1153944193378" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable" flags="nr" index="2GrKxI" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
     </language>
@@ -111,47 +125,110 @@
     </node>
     <node concept="2Sbjvc" id="4Lst5q8S$e" role="2ZfgGD">
       <node concept="3clFbS" id="4Lst5q8S$f" role="2VODD2">
-        <node concept="3cpWs8" id="4Lst5qfDSc" role="3cqZAp">
-          <node concept="3cpWsn" id="4Lst5qfDSf" role="3cpWs9">
-            <property role="TrG5h" value="podproces" />
-            <node concept="3Tqbb2" id="4Lst5qfDSb" role="1tU5fm">
-              <ref role="ehGHo" to="x9er:4Lst5qeHFi" resolve="SubProcess" />
+        <node concept="3cpWs8" id="4Lst5qvGT0" role="3cqZAp">
+          <node concept="3cpWsn" id="4Lst5qvGT3" role="3cpWs9">
+            <property role="TrG5h" value="i" />
+            <node concept="10Oyi0" id="4Lst5qvGSY" role="1tU5fm" />
+            <node concept="3cmrfG" id="4Lst5qvGZv" role="33vP2m">
+              <property role="3cmrfH" value="1" />
             </node>
-            <node concept="2ShNRf" id="4Lst5qfDUF" role="33vP2m">
-              <node concept="3zrR0B" id="4Lst5qfDUD" role="2ShVmc">
-                <node concept="3Tqbb2" id="4Lst5qfDUE" role="3zrR0E">
-                  <ref role="ehGHo" to="x9er:4Lst5qeHFi" resolve="SubProcess" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="4Lst5qwCgX" role="3cqZAp">
+          <node concept="37vLTI" id="4Lst5qwEdm" role="3clFbG">
+            <node concept="3cpWs3" id="4Lst5qwH14" role="37vLTx">
+              <node concept="Xl_RD" id="4Lst5qwEtO" role="3uHU7B">
+                <property role="Xl_RC" value="Prvi nivo dekompozicije procesa: " />
+              </node>
+              <node concept="2OqwBi" id="4Lst5qwHDS" role="3uHU7w">
+                <node concept="2Sf5sV" id="4Lst5qwHhy" role="2Oq$k0" />
+                <node concept="3TrcHB" id="4Lst5qwHPn" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="4Lst5qfEmY" role="3cqZAp">
-          <node concept="37vLTI" id="4Lst5qfFFk" role="3clFbG">
-            <node concept="Xl_RD" id="4Lst5qfFFA" role="37vLTx">
-              <property role="Xl_RC" value="proces2sa" />
-            </node>
-            <node concept="2OqwBi" id="4Lst5qfEnp" role="37vLTJ">
-              <node concept="37vLTw" id="4Lst5qfEmW" role="2Oq$k0">
-                <ref role="3cqZAo" node="4Lst5qfDSf" resolve="podproces" />
-              </node>
-              <node concept="3TrcHB" id="4Lst5qfEoG" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            <node concept="2OqwBi" id="4Lst5qwCL$" role="37vLTJ">
+              <node concept="2Sf5sV" id="4Lst5qwCgW" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4Lst5qwCX3" role="2OqNvi">
+                <ref role="3TsBF5" to="x9er:4Lst5qwB7x" resolve="state" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="4Lst5qfFIO" role="3cqZAp">
-          <node concept="2OqwBi" id="4Lst5qfJb6" role="3clFbG">
-            <node concept="2OqwBi" id="4Lst5qfFT2" role="2Oq$k0">
-              <node concept="2Sf5sV" id="4Lst5qfFIN" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="4Lst5qfG4z" role="2OqNvi">
-                <ref role="3TtcxE" to="x9er:4Lst5qbNh9" resolve="subprocesses" />
+        <node concept="2Gpval" id="4Lst5quGRT" role="3cqZAp">
+          <node concept="2GrKxI" id="4Lst5quGRV" role="2Gsz3X">
+            <property role="TrG5h" value="flow" />
+          </node>
+          <node concept="2OqwBi" id="4Lst5quH9F" role="2GsD0m">
+            <node concept="2Sf5sV" id="4Lst5quGX7" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="4Lst5quHkZ" role="2OqNvi">
+              <ref role="3TtcxE" to="x9er:7GWO_e0jcR1" resolve="flows" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="4Lst5quGRZ" role="2LFqv$">
+            <node concept="3cpWs8" id="4Lst5quHps" role="3cqZAp">
+              <node concept="3cpWsn" id="4Lst5quHpv" role="3cpWs9">
+                <property role="TrG5h" value="subProcess" />
+                <node concept="3Tqbb2" id="4Lst5quHpr" role="1tU5fm">
+                  <ref role="ehGHo" to="x9er:4Lst5qeHFi" resolve="SubProcess" />
+                </node>
+                <node concept="2ShNRf" id="4Lst5quHrM" role="33vP2m">
+                  <node concept="3zrR0B" id="4Lst5quHBi" role="2ShVmc">
+                    <node concept="3Tqbb2" id="4Lst5quHBk" role="3zrR0E">
+                      <ref role="ehGHo" to="x9er:4Lst5qeHFi" resolve="SubProcess" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
-            <node concept="TSZUe" id="4Lst5qfMFj" role="2OqNvi">
-              <node concept="37vLTw" id="4Lst5qfMN4" role="25WWJ7">
-                <ref role="3cqZAo" node="4Lst5qfDSf" resolve="podproces" />
+            <node concept="3clFbF" id="4Lst5qvAf2" role="3cqZAp">
+              <node concept="37vLTI" id="4Lst5qvC0F" role="3clFbG">
+                <node concept="3cpWs3" id="4Lst5qvGon" role="37vLTx">
+                  <node concept="37vLTw" id="4Lst5qvHJf" role="3uHU7w">
+                    <ref role="3cqZAo" node="4Lst5qvGT3" resolve="i" />
+                  </node>
+                  <node concept="3cpWs3" id="4Lst5qvFLY" role="3uHU7B">
+                    <node concept="2OqwBi" id="4Lst5qvCFE" role="3uHU7B">
+                      <node concept="2Sf5sV" id="4Lst5qvCwU" role="2Oq$k0" />
+                      <node concept="3TrcHB" id="4Lst5qvD3$" role="2OqNvi">
+                        <ref role="3TsBF5" to="x9er:5gYNGvLQ17L" resolve="numeration" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="4Lst5qvG6E" role="3uHU7w">
+                      <property role="Xl_RC" value="." />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="4Lst5qvAwu" role="37vLTJ">
+                  <node concept="37vLTw" id="4Lst5qvAf0" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4Lst5quHpv" resolve="subProcess" />
+                  </node>
+                  <node concept="3TrcHB" id="4Lst5qvAIk" role="2OqNvi">
+                    <ref role="3TsBF5" to="x9er:5gYNGvLQ17L" resolve="numeration" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="4Lst5quHCT" role="3cqZAp">
+              <node concept="2OqwBi" id="4Lst5quKQK" role="3clFbG">
+                <node concept="2OqwBi" id="4Lst5quHHs" role="2Oq$k0">
+                  <node concept="2Sf5sV" id="4Lst5quHCS" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="4Lst5quHJW" role="2OqNvi">
+                    <ref role="3TtcxE" to="x9er:4Lst5qbNh9" resolve="subprocesses" />
+                  </node>
+                </node>
+                <node concept="TSZUe" id="4Lst5quOdW" role="2OqNvi">
+                  <node concept="37vLTw" id="4Lst5quOi5" role="25WWJ7">
+                    <ref role="3cqZAo" node="4Lst5quHpv" resolve="subProcess" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="4Lst5qvI8N" role="3cqZAp">
+              <node concept="3uNrnE" id="4Lst5qvKIi" role="3clFbG">
+                <node concept="37vLTw" id="4Lst5qvKIk" role="2$L3a6">
+                  <ref role="3cqZAo" node="4Lst5qvGT3" resolve="i" />
+                </node>
               </node>
             </node>
           </node>

@@ -13,6 +13,8 @@
       </concept>
       <concept id="6070516705893290479" name="NewLanguageMTM.structure.Process" flags="ng" index="2_THWC">
         <property id="6070516705893290481" name="numeration" index="2_THWQ" />
+        <property id="85975011877351905" name="state" index="1rGK0K" />
+        <child id="85975011871896649" name="subprocesses" index="1r7$mo" />
         <child id="8880203821344411073" name="flows" index="3Vs1Yi" />
       </concept>
       <concept id="6070516705893290495" name="NewLanguageMTM.structure.Flow" flags="ng" index="2_THWS">
@@ -25,6 +27,7 @@
         <property id="6070516705893290492" name="description" index="2_THWV" />
       </concept>
       <concept id="6070516705893268691" name="NewLanguageMTM.structure.Element" flags="ng" index="2_Un8k" />
+      <concept id="85975011872660178" name="NewLanguageMTM.structure.SubProcess" flags="ng" index="1r2UG3" />
       <concept id="4390225084680237454" name="NewLanguageMTM.structure.ElementInstance" flags="ng" index="1WGGvU">
         <child id="6679003046163943699" name="type" index="1CUwjL" />
       </concept>
@@ -40,6 +43,7 @@
     <node concept="2_THWC" id="2dvLiYXI$i6" role="3Vtkr6">
       <property role="TrG5h" value="Upis" />
       <property role="2_THWQ" value="Proces 1 " />
+      <property role="1rGK0K" value="Prvi nivo dekompozicije procesa: Upis" />
       <node concept="2_THWS" id="2dvLiYXI$i8" role="3Vs1Yi">
         <property role="TrG5h" value="Tok  1" />
         <ref role="3Vs1L6" node="2dvLiYXI$ia" resolve="Kadrovska evidencija" />
@@ -85,6 +89,26 @@
         <node concept="2_THWZ" id="2dvLiYXJM25" role="2uSV2F">
           <property role="TrG5h" value="izvestaj o prijemnom ispitu" />
         </node>
+      </node>
+      <node concept="1r2UG3" id="68WPGdws4gB" role="1r7$mo">
+        <property role="2_THWQ" value="Proces 1 .1" />
+        <property role="TrG5h" value="Evidentiranje kandidata" />
+        <node concept="2_THWS" id="68WPGdws4gJ" role="3Vs1Yi">
+          <property role="TrG5h" value="Tok  1" />
+          <ref role="3Vs1L6" node="2dvLiYXIl6S" resolve="Student" />
+          <ref role="3Vs1L4" node="68WPGdws4gP" resolve="Kandidati za upis" />
+          <node concept="2_THWZ" id="68WPGdws4gK" role="2uSV1h" />
+          <node concept="2_THWZ" id="68WPGdws4gL" role="2uSV2F" />
+        </node>
+      </node>
+      <node concept="1r2UG3" id="68WPGdws4gC" role="1r7$mo">
+        <property role="2_THWQ" value="Proces 1 .2" />
+      </node>
+      <node concept="1r2UG3" id="68WPGdws4gD" role="1r7$mo">
+        <property role="2_THWQ" value="Proces 1 .3" />
+      </node>
+      <node concept="1r2UG3" id="68WPGdws4gE" role="1r7$mo">
+        <property role="2_THWQ" value="Proces 1 .4" />
       </node>
     </node>
     <node concept="2_THWC" id="2dvLiYXKnSl" role="3Vtkr6">
@@ -180,6 +204,10 @@
     <node concept="1WGGvU" id="2dvLiYXKnSZ" role="3VpUvU">
       <property role="TrG5h" value="Nastavni plan" />
       <node concept="2_Un8k" id="2dvLiYXKnT0" role="1CUwjL" />
+    </node>
+    <node concept="1WGGvU" id="68WPGdws4gP" role="3VpUvU">
+      <property role="TrG5h" value="Kandidati za upis" />
+      <node concept="2_Un8k" id="68WPGdws4gQ" role="1CUwjL" />
     </node>
   </node>
 </model>
