@@ -167,7 +167,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(3);
     b.associate("input", 0x7b3cd253804cce15L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x3ced3674405ff18eL).optional(false).origin("8880203821344411157").done();
     b.associate("output", 0x7b3cd253804cce17L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x3ced3674405ff18eL).optional(false).origin("8880203821344411159").done();
-    b.aggregate("inputFlow", 0x235fc52fbdbc757eL).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d811f8L).optional(false).ordered(true).multiple(false).origin("2548972722952369534").done();
+    b.aggregate("inputFlow", 0x235fc52fbdbc757eL).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d811f8L).optional(true).ordered(true).multiple(false).origin("2548972722952369534").done();
     b.aggregate("outputFlow", 0x235fc52fbdbc7584L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d811f8L).optional(true).ordered(true).multiple(false).origin("2548972722952369540").done();
     return b.create();
   }
@@ -177,7 +177,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:6c0627d3-4986-4ace-b681-5e8c12584872(NewLanguageMTM.structure)/6070516705893290499");
     b.version(3);
-    b.aggregate("elements", 0x7b3cd253805b75a9L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x3ced3674405ff18eL).optional(true).ordered(true).multiple(true).origin("8880203821345371561").done();
+    b.aggregate("externalEntites", 0x7b3cd253805b75a9L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x3ced3674405ff18eL).optional(true).ordered(true).multiple(true).origin("8880203821345371561").done();
+    b.aggregate("dataStores", 0x6751b8a4aedc26a3L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x3ced3674405ff18eL).optional(true).ordered(true).multiple(true).origin("7444934676467951267").done();
+    b.aggregate("elements", 0x6751b8a4aee6e1ecL).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x3ced3674405ff18eL).optional(true).ordered(true).multiple(true).origin("7444934676468654572").done();
     b.aggregate("processes", 0x7b3cd25380499495L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d811efL).optional(true).ordered(true).multiple(true).origin("8880203821344199829").done();
     return b.create();
   }
@@ -189,6 +191,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(3);
     b.property("numeration", 0x543ecec7f1d811f1L).type(PrimitiveTypeId.STRING).origin("6070516705893290481").done();
     b.property("state", 0x13171d15a8271e1L).type(PrimitiveTypeId.STRING).origin("85975011877351905").done();
+    b.property("decompositionPerformed", 0x6083e8925343e342L).type(PrimitiveTypeId.BOOLEAN).origin("6954657964750005058").done();
     b.aggregate("flows", 0x7b3cd253804ccdc1L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x543ecec7f1d811ffL).optional(true).ordered(true).multiple(true).origin("8880203821344411073").done();
     b.aggregate("subprocesses", 0x13171d15a2f3449L).target(0x5dd044a51cd347bbL, 0xa3f5d83db0ac7aebL, 0x13171d15a3adad2L).optional(true).ordered(true).multiple(true).origin("85975011871896649").done();
     b.alias("process");

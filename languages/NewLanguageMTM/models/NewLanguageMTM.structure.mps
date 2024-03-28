@@ -77,6 +77,11 @@
       <property role="TrG5h" value="state" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="623U99jgYd2" role="1TKVEl">
+      <property role="IQ2nx" value="6954657964750005058" />
+      <property role="TrG5h" value="decompositionPerformed" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="7GWO_e0jcR1" role="1TKVEi">
       <property role="IQ2ns" value="8880203821344411073" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -157,7 +162,6 @@
       <property role="IQ2ns" value="2548972722952369534" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="inputFlow" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="5gYNGvLQ17S" resolve="DataFlow" />
     </node>
     <node concept="1TJgyj" id="2dvLiYXJ7m4" role="1TKVEi">
@@ -174,6 +178,20 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7GWO_e0mRmD" role="1TKVEi">
       <property role="IQ2ns" value="8880203821345371561" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="externalEntites" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="3NHdBh0nZ6e" resolve="ElementInstance" />
+    </node>
+    <node concept="1TJgyj" id="6thIaiIR2qz" role="1TKVEi">
+      <property role="IQ2ns" value="7444934676467951267" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="dataStores" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="3NHdBh0nZ6e" resolve="ElementInstance" />
+    </node>
+    <node concept="1TJgyj" id="6thIaiITI7G" role="1TKVEi">
+      <property role="IQ2ns" value="7444934676468654572" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="elements" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
